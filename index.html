@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CricSwarm</title>
+<link href="styles.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+
+</head>
+<body>
+<!-- header end here  --> 
+<!-- top start here -->
+<div class="mainDiv">
+  <div class="tabLeftCurve"><i><span style="color:white;font-size: 30px">Cric</span> <span style="color:snow;font-size: 40px;font-family: 'Sedgwick Ave Display';">S</span> <span style="color:snow;font-size: 30px">warm</span></i></div>
+  <div class="tabBg" id="tabs">
+    <ul>
+      <li><a href="#" class="active menu_btn"><span>Home</span></a></li>
+      <li><a href="#" class="menu_btn"><span>About&nbsp;Us</span></a></li>
+      <li><a href="#" class="menu_btn"><span>Articles</span></a></li>
+      <li><a href="#" class="menu_btn"><span>Top 11</span></a></li>
+      <li><a href="#" class="menu_btn"><span>Contact&nbsp;Us</span></a></li>
+    </ul>
+  </div>
+  <div class="tabRightCurve"><img src="spacer.gif" alt=""></div>
+</div>
+
+<div class="contentDiv">
+	<div class="tabLeftCurve">
+			<div style="text-align: center;color:#0091ff"><h3>Top News</h3></div>
+  			 <ul>
+      <li><div class="active top11_btn" onClick='swap(1)'><span>The best bowler of all time</span></div></li>
+      <li><div class="top11_btn" onClick='swap(2)'><span>I'm really excited about Shaheen Shah Afridi's potential</span></div></li>
+ <!--      <li><a href="#" class="top11_btn"><span>Ricky Ponting says Afridi still has cricket left</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Kumar Sangakkara to captain domestic t20 team</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Inzamam ul Haq says pak need to work on batting</span></a></li>
+  -->     
+    </ul>
+
+	</div>
+  <div class="tabBg" id="tabs">
+<h1 style="color:#0091ff" id='heading'>"I faced some of the greatest bowlers of all-time but Wasim Akram was the best" : Shiv Chanderpaul</h1>
+<img id='image' src="1.jpg" style="max-height: 300px;max-width: 100%">
+<h6 style="color:#00b1ff" id='body'>
+Blessed with amazing talent and armed with an extraordinary batting stance, Shivnarine Chanderpaul debuted in 1994 and served the West Indies for 21 years playing a total of 454 international games. By the time he played his last international game in 2015, he had amassed 20998 runs and was the 7th highest-ever run scorer in the long form of the game and behind only Brian Lara for his country.
+In an interview, the 43-year-old Shivnarine Chanderpaul spoke about the special moments of his illustrious career, his views on the the current crop of West Indies Test players, the constant controversies surrounding the Cricket West Indies, why he rates Wasim Akram as the best bowler he has faced, and his plans for the future.
+Read more at http://www.pakpassion.net/component/exclusives/item/1195.html#82JA2Eu9IUPUb33d.99
+</h6>
+  </div>
+  <div class="tabRightCurve top11">
+  			<div style="text-align: center"><h3>CricSwarm 11</h3></div>
+  			 <ul>
+      <li><a href="#" class="active top11_btn"><span>Quinton de Kock  - SA</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Virat Kohli  - IND</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Steve Smith  -  AUS</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Babar Azam  - PAK</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Jonny Bairstow  - ENG</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Sarfaraz Ahmed  - PAK</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Shahid Afridi  -  PAK</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Imran Tahir  - SA</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Hassan Ali  -PAK</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Mohammed Aamir  -  PAK</span></a></li>
+      <li><a href="#" class="top11_btn"><span>Jasprit Bumrah  - IND</span></a></li>
+      <li><a href="#" class="top11_btn"><span>12th man : Mitchell Starc  - AUS</span></a></li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+	function swap(num){
+		var body=document.getElementById('body');
+		var heading=document.getElementById('heading');
+		var image=document.getElementById('image');
+		switch (num){
+			case 1:
+					body.innerHTML="The news of Pakistan’s loss to Sri Lanka in the first Test match of the ongoing series being played in in the UAE shocked many a Pakistan supporter. The manner of the capitulation of the Pakistan batsmen seems to indicate a real issue with the ability to handle pressure situations due to the absence of Misbah-ul-Haq and Younis Khan. However, what it also brought to light was the importance of good spin options in any Test team, as was ably demonstrated by Sri Lanka in Abu Dhabi.A World Cup winner and a veteran of 52 Tests where he took 185 wickets, Mushtaq Ahmed holds the position of the Head Coach at the National Cricket Academy in Lahore where finding the right kind of specialist spinner for Pakistan to partner Yasir Shah is one of his prime goals, as he explained in an exclusive interview with PakPassion.net Read more at http://www.pakpassion.net/component/content/article.html?id=article#8DbPgdDtsHXgxb61.99";
+					heading.innerHTML="I'm really excited about Shaheen Shah Afridi's potential : Mushtaq Ahmed";
+					image.src=num+'.jpg';
+					break;
+			case 2:
+			body.innerHTML="Blessed with amazing talent and armed with an extraordinary batting stance, Shivnarine Chanderpaul debuted in 1994 and served the West Indies for 21 years playing a total of 454 international games. By the time he played his last international game in 2015, he had amassed 20998 runs and was the 7th highest-ever run scorer in the long form of the game and behind only Brian Lara for his country.In an interview, the 43-year-old Shivnarine Chanderpaul spoke about the special moments of his illustrious career, his views on the the current crop of West Indies Test players, the constant controversies surrounding the Cricket West Indies, why he rates Wasim Akram as the best bowler he has faced, and his plans for the future.Read more at http://www.pakpassion.net/component/exclusives/item/1195.html#g0rCg8Sdw3FYpq4k.99";
+					heading.innerHTML="I faced some of the greatest bowlers of all-time but Wasim Akram was the best : Shiv Chanderpaul";
+						image.src=num+'.jpg';
+					break;
+
+		}
+	} 
+</script>
+</body>
+</html>
+
